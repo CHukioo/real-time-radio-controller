@@ -1,0 +1,199 @@
+:root {
+  --primary-color: #264653;
+  --primary-hover: #1a2f38;
+  --bg-color: #f8f9fa;
+  --card-bg: #ffffff;
+  --text-color: #212529;
+  --text-muted: #718096;
+  --border-color: #dee2e6;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #edede9 !important;
+  color: var(--text-color);
+  min-height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  background-color: var(--primary-color) !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand, .nav-link {
+  color: #ffffff !important;
+}
+
+.nav-link:hover {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.card {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background-color: var(--card-bg);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.card-title {
+  color: var(--text-color);
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.player-container {
+  min-height: calc(100vh - 56px); /* Subtract navbar height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.volume-control {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.list-group-item {
+  border: 1px solid var(--border-color);
+  margin-bottom: 8px;
+  border-radius: 8px !important;
+  background-color: var(--card-bg);
+  transition: background-color 0.2s;
+}
+
+.list-group-item:hover {
+  background-color: var(--bg-color);
+}
+
+.btn {
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+}
+
+.btn-primary:hover {
+  background-color: #1a2f38 !important;
+  border-color: #1a2f38 !important;
+}
+
+.btn-success {
+  background-color: #48bb78 !important;
+  border-color: #48bb78 !important;
+}
+
+.btn-success:hover {
+  background-color: #38a169 !important;
+  border-color: #38a169 !important;
+}
+
+.btn-danger {
+  background-color: #f56565 !important;
+  border-color: #f56565 !important;
+}
+
+.btn-danger:hover {
+  background-color: #e53e3e !important;
+  border-color: #e53e3e !important;
+}
+
+.form-control {
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  padding: 8px 12px;
+  transition: all 0.2s;
+}
+
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.2rem rgba(38, 70, 83, 0.25);
+}
+
+.form-label {
+  color: var(--text-color);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.form-range::-webkit-slider-thumb {
+  background: var(--primary-color);
+}
+
+.form-range::-moz-range-thumb {
+  background: var(--primary-color);
+}
+
+.text-muted {
+  color: var(--text-muted) !important;
+}
+
+.spinner-border {
+  color: var(--primary-color) !important;
+}
+
+audio {
+  border-radius: 6px;
+  background-color: var(--card-bg);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1a2f38;
+}
+
+/* Selected radio station styles */
+.list-group-item.active {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  color: white !important;
+}
+
+.list-group-item.active small {
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.list-group-item.active .btn-light {
+  background-color: white !important;
+  border-color: white !important;
+  color: var(--primary-color) !important;
+}
+
+.list-group-item.active .btn-light:hover {
+  background-color: #f8f9fa !important;
+  border-color: #f8f9fa !important;
+}

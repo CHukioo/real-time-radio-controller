@@ -41,10 +41,7 @@ npm install
 yarn install
 ```
 
-3. Create a `.env` file in the root directory:
-```
-REACT_APP_POCKETBASE_URL=your_pocketbase_url
-```
+3. In the `/src/pocketbase.js` file change `YOUR_POCKETBASE_URL` with your own pocketbase url.
 
 4. Start the development server:
 ```bash
@@ -64,18 +61,16 @@ git push origin main
 
 2. Go to [Vercel](https://vercel.com) and sign in with your GitHub account
 
-3. Click "New Project" and import your repository
-
-4. Configure your project:
+3. Configure your project:
    - Framework Preset: Create React App
    - Build Command: `npm run build` or `yarn build`
    - Output Directory: `build`
    - Install Command: `npm install` or `yarn install`
 
-5. Add environment variables:
+4. Add environment variables:
    - `REACT_APP_POCKETBASE_URL`: Your PocketBase server URL
 
-6. Click "Deploy"
+5. Click "Deploy"
 
 Vercel will automatically deploy your application and provide you with a URL. It will also set up automatic deployments for future pushes to your repository.
 
